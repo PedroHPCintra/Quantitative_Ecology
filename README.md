@@ -45,6 +45,7 @@ I'm also leaving this section to provide some links to theoretical calculations 
 
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
 1. Elderd, B. D., & Doak, D. F. (2006). Comparing the direct and community-mediated effects of disturbance on plant population dynamics: flooding, herbivory and Mimulus guttatus. _Journal of Ecology_, 656-669. URL: [https://www.jstor.org/stable/3879611](https://www.jstor.org/stable/3879611)
+2. Lewontin, R. C., & Cohen, D. (1969). On population growth in a randomly varying environment. _Proceedings of the National Academy of sciences_, 62(4), 1056-1060. DOI: [https://doi.org/10.1073/pnas.62.4.1056](https://doi.org/10.1073/pnas.62.4.1056)
 
 - :file_folder:```Metapopulations_corals```
 1. McManus, L. C., Vasconcelos, V. V., Levin, S. A., Thompson, D. M., Kleypas, J. A., Castruccio, F. S., ... & Watson, J. R. (2020). Extreme temperature events will drive coral decline in the Coral Triangle. _Global Change Biology_, 26(4), 2120-2133. DOI: [https://doi.org/10.1111/gcb.14972](https://doi.org/10.1111/gcb.14972)
