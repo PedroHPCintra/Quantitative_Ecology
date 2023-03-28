@@ -43,6 +43,8 @@ Therefore I would like to be cited as **Cintra, P. H. P.** if you use any of the
 
 I'm also leaving this section to provide some links to theoretical calculations done by me or other papers related to the models and projects here. The theoretical work that is done by me (mostly for study) will be available at my [website](https://sites.google.com/view/pedrocintra).
 
+- [From discrete individuals to continuous populations](https://sites.google.com/view/pedrocintra). This is a mathematical development that [Vitor V. Vasconcelos](https://vvvasconcelos.github.io/) showed to me, demonstrating from first principles that the replicator equation arises from individual dynamics, when the population becomes large. I wrote a Portuguese pdf of the math behind it and made it available at my [website](https://sites.google.com/view/pedrocintra).
+
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
 1. Elderd, B. D., & Doak, D. F. (2006). Comparing the direct and community-mediated effects of disturbance on plant population dynamics: flooding, herbivory and Mimulus guttatus. _Journal of Ecology_, 656-669. URL: [https://www.jstor.org/stable/3879611](https://www.jstor.org/stable/3879611)
 2. Lewontin, R. C., & Cohen, D. (1969). On population growth in a randomly varying environment. _Proceedings of the National Academy of sciences_, 62(4), 1056-1060. DOI: [https://doi.org/10.1073/pnas.62.4.1056](https://doi.org/10.1073/pnas.62.4.1056)
