@@ -1,6 +1,6 @@
 # Quantitative_Ecology :earth_americas: :monocle_face:
 
-Latest update: 27/03/2023
+Latest update: 18/08/2023
 
 Welcome! This repo is a storage for all of my codes related to quantative ecological systems. Until now, most of them are from classes that I took at the [Training Program in Quantitative Ecology 2023](https://www.ictp-saifr.org/qecoprogram/) by the [Serrapilheira Institute](https://serrapilheira.org/) and [ICTP-SAIFR](https://www.ictp-saifr.org/) in São Paulo, Brazil.
 
@@ -26,6 +26,7 @@ Until now, the following projects are of my own authorship:
 
 - :file_folder:```Competitive_exclusion_evolution```
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
+- :file_folder:```Fireflies_sync```
 
 Therefore I would like to be cited as **Cintra, P. H. P.** if you use any of them. If you want, the bibtex format for the citation is found below:
 ```
@@ -52,3 +53,8 @@ I'm also leaving this section to provide some links to theoretical calculations 
 - :file_folder:```Metapopulations_corals```
 1. McManus, L. C., Vasconcelos, V. V., Levin, S. A., Thompson, D. M., Kleypas, J. A., Castruccio, F. S., ... & Watson, J. R. (2020). Extreme temperature events will drive coral decline in the Coral Triangle. _Global Change Biology_, 26(4), 2120-2133. DOI: [https://doi.org/10.1111/gcb.14972](https://doi.org/10.1111/gcb.14972)
 2. McManus, L. C., Forrest, D. L., Tekwa, E. W., Schindler, D. E., Colton, M. A., Webster, M. M., ... & Pinsky, M. L. (2021). Evolution and connectivity influence the persistence and recovery of coral reefs under climate change in the Caribbean, Southwest Pacific, and Coral Triangle. _Global change biology_, 27(18), 4307-4321. DOI: [https://doi.org/10.1111/gcb.15725](https://doi.org/10.1111/gcb.15725)
+
+- :file_folder:```Fireflies_sync```
+1. Heffern, E. F., Huelskamp, H., Bahar, S., & Inglis, R. F. (2021). Phase transitions in biology: from bird flocks to population dynamics. Proceedings of the Royal Society B, 288(1961), 20211111.. DOI: [https://doi.org/10.1098/rspb.2021.1111](https://doi.org/10.1098/rspb.2021.1111)
+2. Kuramoto, Y. (1975). Self-entrainment of a population of coupled non-linear oscillators. In International Symposium on Mathematical Problems in Theoretical Physics: January 23–29, 1975, Kyoto University, Kyoto/Japan (pp. 420-422). Springer Berlin Heidelberg.
+3. Strogatz, S. H., & Stewart, I. (1993). Coupled oscillators and biological synchronization. Scientific american, 269(6), 102-109.
