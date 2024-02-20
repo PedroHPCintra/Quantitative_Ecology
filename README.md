@@ -1,6 +1,6 @@
 # Quantitative_Ecology :earth_americas: :monocle_face:
 
-Latest update: 27/03/2023
+Latest update: 20/02/2024
 
 Welcome! This repo is a storage for all of my codes related to quantative ecological systems. Until now, most of them are from classes that I took at the [Training Program in Quantitative Ecology 2023](https://www.ictp-saifr.org/qecoprogram/) by the [Serrapilheira Institute](https://serrapilheira.org/) and [ICTP-SAIFR](https://www.ictp-saifr.org/) in São Paulo, Brazil.
 
@@ -43,7 +43,7 @@ Therefore I would like to be cited as **Cintra, P. H. P.** if you use any of the
 
 I'm also leaving this section to provide some links to theoretical calculations done by me or other papers related to the models and projects here. The theoretical work that is done by me (mostly for study) will be available at my [website](https://sites.google.com/view/pedrocintra).
 
-- [From discrete individuals to continuous populations](https://sites.google.com/view/pedrocintra). This is a mathematical development that [Vitor V. Vasconcelos](https://vvvasconcelos.github.io/) showed to me, demonstrating from first principles that the replicator equation arises from individual dynamics, when the population becomes large. I wrote a Portuguese pdf of the math behind it and made it available at my [website](https://sites.google.com/view/pedrocintra).
+- [From discrete individuals to continuous populations](https://pedrohpcintra.github.io/assets/pdf/Class-note-de-individuos-a-populacoes.pdf). This is a mathematical development that [Vitor V. Vasconcelos](https://vvvasconcelos.github.io/) showed to me, demonstrating from first principles that the replicator equation arises from individual dynamics, when the population becomes large. I wrote a Portuguese pdf of the math behind it and made it available at my [website](https://sites.google.com/view/pedrocintra).
 
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
 1. Elderd, B. D., & Doak, D. F. (2006). Comparing the direct and community-mediated effects of disturbance on plant population dynamics: flooding, herbivory and Mimulus guttatus. _Journal of Ecology_, 656-669. URL: [https://www.jstor.org/stable/3879611](https://www.jstor.org/stable/3879611)
@@ -52,3 +52,6 @@ I'm also leaving this section to provide some links to theoretical calculations 
 - :file_folder:```Metapopulations_corals```
 1. McManus, L. C., Vasconcelos, V. V., Levin, S. A., Thompson, D. M., Kleypas, J. A., Castruccio, F. S., ... & Watson, J. R. (2020). Extreme temperature events will drive coral decline in the Coral Triangle. _Global Change Biology_, 26(4), 2120-2133. DOI: [https://doi.org/10.1111/gcb.14972](https://doi.org/10.1111/gcb.14972)
 2. McManus, L. C., Forrest, D. L., Tekwa, E. W., Schindler, D. E., Colton, M. A., Webster, M. M., ... & Pinsky, M. L. (2021). Evolution and connectivity influence the persistence and recovery of coral reefs under climate change in the Caribbean, Southwest Pacific, and Coral Triangle. _Global change biology_, 27(18), 4307-4321. DOI: [https://doi.org/10.1111/gcb.15725](https://doi.org/10.1111/gcb.15725)
+
+- :file_folder:```Locust_march```
+1. Buhl, J., Sumpter, D. J., Couzin, I. D., Hale, J. J., Despland, E., Miller, E. R., & Simpson, S. J. (2006). From disorder to order in marching locusts. _Science, 312(5778)_, 1402-1406. DOI: [10.1126/science.1125142](https://doi.org/10.1126/science.1125142)
