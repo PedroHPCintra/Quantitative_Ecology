@@ -30,8 +30,8 @@ $$
 \begin{align}
     G(u) =
     \begin{cases}
-        \frac{u+1}{2}, \, \text{ if } u > 0 \\
-        \frac{u-1}{2}, \, \text{ if } u < 0
+        \frac{u+1}{2}, \text{ if } u > 0 \\
+        \frac{u-1}{2}, \text{ if } u < 0
     \end{cases}
 \end{align}
 $$
