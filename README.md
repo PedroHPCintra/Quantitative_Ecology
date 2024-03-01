@@ -1,6 +1,6 @@
 # Quantitative_Ecology :earth_americas: :monocle_face:
 
-Latest update: 20/02/2024
+Latest update: 29/02/2024
 
 Welcome! This repo is a storage for all of my codes related to quantative ecological systems. Until now, most of them are from classes that I took at the [Training Program in Quantitative Ecology 2023](https://www.ictp-saifr.org/qecoprogram/) by the [Serrapilheira Institute](https://serrapilheira.org/) and [ICTP-SAIFR](https://www.ictp-saifr.org/) in São Paulo, Brazil.
 
@@ -44,7 +44,7 @@ Therefore I would like to be cited as **Cintra, P. H. P.** if you use any of the
 
 I'm also leaving this section to provide some links to theoretical calculations done by me or other papers related to the models and projects here. The theoretical work that is done by me (mostly for study) will be available at my [website](https://sites.google.com/view/pedrocintra).
 
-- [From discrete individuals to continuous populations](https://pedrohpcintra.github.io/assets/pdf/Class-note-de-individuos-a-populacoes.pdf). This is a mathematical development that [Vitor V. Vasconcelos](https://vvvasconcelos.github.io/) showed to me, demonstrating from first principles that the replicator equation arises from individual dynamics, when the population becomes large. I wrote a Portuguese pdf of the math behind it and made it available at my [website](https://sites.google.com/view/pedrocintra).
+- [From discrete individuals to continuous populations](https://pedrohpcintra.github.io/assets/pdf/Class-note-de-individuos-a-populacoes.pdf). This is a mathematical theoretic approach to ecology inspired by the MsC thesis of [João Pedro Valeriano](https://joaovaleriano.github.io/) and a stochastic modelling class by [Vitor V. Vasconcelos](https://vvvasconcelos.github.io/), demonstrating from first principles that the replicator equation and differential equations models arises from individual dynamics, when the population becomes large. I wrote it in Portuguese made it available at my [website](https://pedrohpcintra.github.io/assets/pdf/Class-note-de-individuos-a-populacoes.pdf), the english translation is currently under development (the Portuguese version is too, to be honest).
 
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
 1. Elderd, B. D., & Doak, D. F. (2006). Comparing the direct and community-mediated effects of disturbance on plant population dynamics: flooding, herbivory and Mimulus guttatus. _Journal of Ecology_, 656-669. URL: [https://www.jstor.org/stable/3879611](https://www.jstor.org/stable/3879611)
