@@ -8,7 +8,7 @@ import psutil
 import utils as ut
 import plots
 
-def run_model(Ni, N0, L, v, angle, size, K, r, dt, sight_radius, max_energy, dispersal, nsteps, plot_frequency):
+def run_model(Ni, N0, L, v, food_energy, angle, size, K, r, dt, sight_radius, alpha, max_energy, dispersal, nsteps, plot_frequency, fig_rows, fig_columns, figsize, mutatables: list, print_memory = False):
 
     pos = np.array([0, 10])
     vel = np.array([v*np.cos(angle), v*np.sin(angle)])
@@ -37,15 +37,23 @@ def run_model(Ni, N0, L, v, angle, size, K, r, dt, sight_radius, max_energy, dis
 
     life = {}
     life[0] = np.ones(Ni)
+    
+    steps = {}
+    steps[0] = np.round(np.random.pareto(a = alpha, size = Ni), 0)
+    
+    alphas = {}
+    alphas[0] = np.ones(Ni)*alpha
 
     for i in range(1, nsteps):
         t = dt*i
         # print("---------------------------------")
         # print(f"i = {i}")
         ram_usage = psutil.virtual_memory()[3]/1000000000
-        if 13.4 >= ram_usage > 11.5:
-            print(f"Frame: {i} - Memory RAM usage: {ram_usage:.2f}", end = '\r')
+        if print_memory:
+            if 13.4 >= ram_usage > 11.5:
+                print(f"Frame: {i} - Memory RAM usage: {ram_usage:.2f}", end = '\r')
         if ram_usage > 13.5:
+            print("Breaking simulation due to memory usage")
             break
         food_pos[i] = ut.food_growth(
             food_pos[i-1],
@@ -76,24 +84,33 @@ def run_model(Ni, N0, L, v, angle, size, K, r, dt, sight_radius, max_energy, dis
 
         for j in range(i):
             mean_vel_vec.append(np.mean(velocities[j]))
+            
+        mean_alphas_vec = []
         
-        positions[i], velocities[i], size_vec[i], angles[i], energy[i], sight_vec[i], life[i] = ut.reproduction(
+        for j in range(i):
+            mean_alphas_vec.append(np.mean(alphas[j]))
+        
+        positions[i], velocities[i], alphas[i], size_vec[i], angles[i], energy[i], sight_vec[i], life[i], steps[i] = ut.reproduction(
             x = positions[i-1],
             v = velocities[i-1],
+            alpha = alphas[i-1],
             size = size_vec[i-1],
             angle = angles[i-1],
             energy = energy[i-1],
             sight_radius = sight_vec[i-1],
             reproduction_threshold = 0.8*max_energy,
             reproduction_cost = 0.4*max_energy,
-            life = life[i-1]
-            )
+            life = life[i-1],
+            steps = steps[i-1],
+            mutatables = mutatables
+        )
         # print("After reproduction and before position update")
         # print("i: ", positions[i])
         # print("i-1: ", positions[i-1])
-        positions[i], angles[i], energy[i], food_pos[i], life[i] = ut.update_position(
+        positions[i], angles[i], energy[i], food_pos[i], life[i], steps[i] = ut.update_position(
             x = positions[i],
             v = velocities[i],
+            alpha = alphas[i],
             dt = dt,
             size = size_vec[i],
             L = L,
@@ -101,27 +118,30 @@ def run_model(Ni, N0, L, v, angle, size, K, r, dt, sight_radius, max_energy, dis
             rand = np.pi/6,
             energy = energy[i],
             food = food_pos[i],
-            food_energy = 100,
+            food_energy = food_energy,
             sight_radius = sight_vec[i],
             max_energy = max_energy,
             life = life[i],
-            metabolic_rate = 3
-            )
+            metabolic_rate = 3,
+            steps = steps[i]
+        )
         # print("After position update")
         # print("i: ", positions[i])
         # print("i-1: ", positions[i-1])
         if len(np.where(life[i] == 1)[0]) == 0:
+            print("Everybody died")
             break
         
         if i % plot_frequency == 0:
             # print(f"{i}/{nsteps} - {100*i/nsteps:.1f}%", end = '\r')
             print(f"Plotting... {i}/{nsteps}", end = '\r')
-            fig, axs = plt.subplots(2, 2, figsize=(8,8), gridspec_kw={'width_ratios': [1, 1]})
+            fig, axs = plt.subplots(fig_rows, fig_columns, figsize=figsize, gridspec_kw={'width_ratios': [1, 1]})
             ax = axs.flatten()
             plots.plot(
                 fig,
                 ax,
                 i-1,
+                L,
                 positions,
                 velocities,
                 food_pos,
@@ -134,6 +154,7 @@ def run_model(Ni, N0, L, v, angle, size, K, r, dt, sight_radius, max_energy, dis
                 mean_vel_vec,
                 plot_frequency,
                 save = True,
-                show = False)
+                show = False
+            )
     
-    return positions, velocities, energy, life, size_vec, sight_vec, food_pos
+    return positions, velocities, energy, life, size_vec, sight_vec, food_pos, alphas
