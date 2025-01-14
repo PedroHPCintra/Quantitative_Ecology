@@ -1,6 +1,6 @@
 # Quantitative_Ecology :earth_americas: :monocle_face:
 
-Latest update: 15/07/2024
+Latest update: 14/01/2025
 
 Welcome! This repo is a storage for all of my codes related to quantative ecological systems. Until now, most of them are from classes that I took at the [Training Program in Quantitative Ecology 2023](https://www.ictp-saifr.org/qecoprogram/) by the [Serrapilheira Institute](https://serrapilheira.org/) and [ICTP-SAIFR](https://www.ictp-saifr.org/) in São Paulo, Brazil.
 
@@ -27,6 +27,8 @@ Until now, the following projects are of my own authorship:
 - :file_folder:```Competitive_exclusion_evolution```
 - :file_folder:```Stochastic_model_Mimulus_guttatus```
 - :file_folder:```Fireflies_sync```
+
+The project ```Lizards``` is composed both by codes reproducing results from papers and a model of my own.
 
 Therefore I would like to be cited as **Cintra, P. H. P.** if you use any of them. If you want, the bibtex format for the citation is found below:
 ```
